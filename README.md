@@ -1,4 +1,4 @@
-<h1>NorthernBrightHealth</h1>
+<h1>Northern Bright Health</h1>
 <h3>Description</h3>
 <hr />
 
