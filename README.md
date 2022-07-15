@@ -23,7 +23,7 @@ A seperation-of-concerns approach is used, so more projects are present.
 <h3>Diagram</h3>
 <hr />
 
-![image](https://user-images.githubusercontent.com/76532502/179171945-e16e8af9-e19d-469f-96b0-da1b7f5f6ac5.png)
+![image](https://user-images.githubusercontent.com/76532502/179172504-f07b65a3-2df7-4ec5-80af-7e34a8fcf219.png)
 
 Note: Business logic could be abstracted from the WebAPI to further decompose the solution.
 <h3>Backlog</h3>
