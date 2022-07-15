@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthernBrightHealth.WebForms", "NorthernBrightHealth.WebForms\NorthernBrightHealth.WebForms.csproj", "{DC07FE23-EA07-4BDF-A847-9C5ADDC90285}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4B71BCDB-38B6-42A2-B649-8DFFE522C321} = {4B71BCDB-38B6-42A2-B649-8DFFE522C321}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthernBrightHealth.EF", "NorthernBrightHealth.EF\NorthernBrightHealth.EF.csproj", "{D3FB8591-E94E-43CD-B225-4A4D717815D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthernBrightHealth.WebAPI", "NorthernBrightHealth.WebAPI\NorthernBrightHealth.WebAPI.csproj", "{4B71BCDB-38B6-42A2-B649-8DFFE522C321}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3FB8591-E94E-43CD-B225-4A4D717815D6} = {D3FB8591-E94E-43CD-B225-4A4D717815D6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthernBrightHealth.Shared", "NorthernBrightHealth.Shared\NorthernBrightHealth.Shared.csproj", "{E3083C66-057F-42BB-8BFA-18B25A836BA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC07FE23-EA07-4BDF-A847-9C5ADDC90285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC07FE23-EA07-4BDF-A847-9C5ADDC90285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC07FE23-EA07-4BDF-A847-9C5ADDC90285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC07FE23-EA07-4BDF-A847-9C5ADDC90285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FB8591-E94E-43CD-B225-4A4D717815D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FB8591-E94E-43CD-B225-4A4D717815D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FB8591-E94E-43CD-B225-4A4D717815D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FB8591-E94E-43CD-B225-4A4D717815D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B71BCDB-38B6-42A2-B649-8DFFE522C321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B71BCDB-38B6-42A2-B649-8DFFE522C321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B71BCDB-38B6-42A2-B649-8DFFE522C321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B71BCDB-38B6-42A2-B649-8DFFE522C321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3083C66-057F-42BB-8BFA-18B25A836BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3083C66-057F-42BB-8BFA-18B25A836BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3083C66-057F-42BB-8BFA-18B25A836BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3083C66-057F-42BB-8BFA-18B25A836BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2E81C77-650E-47C2-B7A9-8B2099B17FEA}
+	EndGlobalSection
+EndGlobal
