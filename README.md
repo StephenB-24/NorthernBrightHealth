@@ -28,4 +28,6 @@ A seperation-of-concerns approach is used, so more projects are present.
 Note: Business logic could be abstracted from the WebAPI to further decompose the solution.
 <h3>Backlog</h3>
 <hr />
-
+Logging
+Validation of form
+Improvements to CSS
