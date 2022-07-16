@@ -21,18 +21,40 @@ span {
     display: inline
 }
 
+.view-patients-table {
+    overflow: auto;
+    max-height: 500px;
+}
 
-
-.outer-screen {
+.computer-outer-screen {
     background: rgb(30, 30, 30, .95);
     padding: 48px 48px 48px 48px;
     margin-top: 12px;
     border-radius: 24px;
-    /*background-image: url("../images/computer.jpg");*/
+    border-style: ridge;
+    border-width: 30px;
 }
 
 .computer-stand {
-    background: rbg(0,0,0);
+    margin: auto;
+    background: rgb(30, 30, 30);
+    width: 200px;
+    height: 100px;
+}
+
+.computer-base {
+    margin: auto;
+    background: rgb(30, 30, 30);
+    width: 300px;
+    height: 50px;
+}
+
+.computer-table {
+    margin: auto;
+    background-color: rgb(139,69,19);
+    width: 80%;
+    min-height: 50px;
+    /*height: calc(100px - 100vw);*/
 }
 
 input, span, select {
@@ -52,7 +74,6 @@ input, span, select {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
     background-image: url("../images/deep_space.jpg");
     animation: moveIt 120s linear infinite;
 }

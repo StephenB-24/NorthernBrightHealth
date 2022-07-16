@@ -11,10 +11,6 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (response) {
-                    console.log('here1');
-                    console.log(response);
-                    /*var obj = JSON.parse(response);*/
-
                     var rows = '';
 
                     for (var x in response) {
@@ -45,7 +41,7 @@
         <h1>Patients</h1>
         <h4>Below are the patients you have cured</h4>
         <hr />
-        <div class="table-responsive">
+        <div class="table-responsive view-patients-table">
             <table class="tblPatients table" border="1">
                 <thead>
                     <tr>

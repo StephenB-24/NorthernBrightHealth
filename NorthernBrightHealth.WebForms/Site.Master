@@ -8,15 +8,37 @@
 
     <%-- Ensure proper rendering and touch zooming for mobile --%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script>
+        window.addEventListener("resize", displayWindowSize);
+        window.onload = displayWindowSize;
+
+        function displayWindowSize() {
+            let myWidth = window.innerWidth;
+            let myHeight = window.innerHeight;
+
+            console.log(window.innerHeight);
+
+            // your size calculation code here
+
+            var heightOfScreen = document.getElementById('comp-outer-screen').offsetHeight;
+            console.log('heightOfScreen ' + heightOfScreen);
+
+            document.getElementById("comp-table").style.height = myHeight - (50 + 18 + heightOfScreen + 150) + 'px';
+
+            var bodyHeight = document.getElementById("body-content").offsetHeight;
+            document.getElementById("window-pane").style.height = myHeight - (50 + 18 + heightOfScreen + 150) + bodyHeight + 'px';
+        };
+    </script>
 
 </head>
 <body>
@@ -59,15 +81,24 @@
                 </div>
             </div>
         </div>
-        <div class="computer-stand" />
+        <div id="window-pane" class="window-pane" style="height:100%;">
+            <div id="body-content" class="container body-content">
+                <div id="comp-outer-screen" class="computer-outer-screen">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
 
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Northern Bright Health</p>
-            </footer>
+                <div class="computer-stand"></div>
+                <div class="computer-base"></div>
+                <div style="position: relative; z-index: -1;">
+                    <div id="comp-table" class="computer-table" style="position: absolute; position: absolute; left: 50%; transform: translate(-50%, 0%); padding: 10px;">
+                        <footer>
+                            <p>&copy; <%: DateTime.Now.Year %> - Northern Bright Health</p>
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     </form>

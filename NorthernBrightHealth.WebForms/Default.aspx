@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="NorthernBrightHealth.WebForms._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="outer-screen">
+    <div class="computer-inner-screen">
         <h1>Welcome to the Future of Healthcare.</h1>
         <h4>Here at Northern Bright Health, we offer service that cannot be beat (literally)! </h4>
         <hr style="background-color: white;" />
@@ -65,7 +65,7 @@
 
         <%-- Submit Button --%>
         <div class="submission-button">
-            <asp:Button Text="Submit Patient"
+            <asp:Button CssClass="submission-button" Text="Submit Patient"
                 OnClick="SubmitPatient"
                 runat="server" />
         </div>
