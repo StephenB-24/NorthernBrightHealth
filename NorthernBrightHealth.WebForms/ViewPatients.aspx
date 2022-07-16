@@ -33,7 +33,6 @@
                     }
                     console.log(rows);
                     $('.tblPatients tbody').append(rows);
-                    console.log('here');
                 },
                 error: function (response) {
                     var r = jQuery.parseJSON(response.responseText);
