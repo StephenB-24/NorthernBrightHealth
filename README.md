@@ -15,7 +15,7 @@ A seperation-of-concerns approach is used, so more projects are present.
 <hr />
 Load the project up in Visual Studio. As a note, I used Visual Studio 2022 for this project.
 
-<b>The most important aspect of running this project to to make sure that the WebAPI and WebForms app are set as startup together.</b>
+<b>The most important aspect of running this project to to make sure that both the WebAPI and WebForms apps are set as startup together.</b>
 
 In order to do this, right click on the <b>solution</b> and setup multiple startup projects. Select both the WebAPI and the WebForms project as startups.
 
