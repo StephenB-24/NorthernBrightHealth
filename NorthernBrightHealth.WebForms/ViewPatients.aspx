@@ -31,7 +31,6 @@
 
                         rows += "<tr><td>" + id + "</td><td>" + fn + ' ' + "</td><td>" + ln + "</td><td>" + dob + "</td><td>" + weight + "</td><td>" + height + "</td><td>" + immortal + "</td><td>" + added + "</td><td>" + updated + "</td></tr>";
                     }
-                    console.log(rows);
                     $('.tblPatients tbody').append(rows);
                 },
                 error: function (response) {
