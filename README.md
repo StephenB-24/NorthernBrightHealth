@@ -11,6 +11,16 @@
 Note: This solution was made with the ASP.NET Web Forms project as the main intention of the project.
 A seperation-of-concerns approach is used, so more projects are present.
 
+<h3>Instructions to Run</h3>
+<hr />
+Load the project up in Visual Studio. As a note, I used Visual Studio 2022 for this project.
+
+<b>The most important aspect of running this project to to make sure that both the WebAPI and WebForms apps are set as startup together.</b>
+
+In order to do this, right click on the <b>solution</b> and then click properties, and select the radio button for multiple startup projects. Select both the WebAPI and the WebForms project as startups.
+
+
+
 <h3>Solution Breakdown</h3>
 <hr />
 <ul>
@@ -29,3 +39,10 @@ Note: Business logic could be abstracted from the WebAPI to further decompose th
 <h3>Backlog</h3>
 <hr />
 
+Logging
+
+Validation of form
+
+Improvements to CSS
+
+Add descriptions to the API calls within the WebAPI project
