@@ -106,8 +106,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="ViewPatients.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -125,6 +124,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\deep_space.jpg" />
     <Content Include="NorthernBrightHealth.WebAPI.csproj" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -163,20 +163,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="ViewPatients.aspx.cs">
+      <DependentUpon>ViewPatients.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="ViewPatients.aspx.designer.cs">
+      <DependentUpon>ViewPatients.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -227,6 +220,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NorthernBrightHealth.Shared\NorthernBrightHealth.Shared.csproj">
+      <Project>{E3083C66-057F-42BB-8BFA-18B25A836BA9}</Project>
+      <Name>NorthernBrightHealth.Shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NorthernBrightHealth.WebAPI\NorthernBrightHealth.WebAPI.csproj">
       <Project>{4b71bcdb-38b6-42a2-b649-8dffe522c321}</Project>
       <Name>NorthernBrightHealth.WebAPI</Name>

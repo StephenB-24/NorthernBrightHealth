@@ -1,42 +1,73 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="NorthernBrightHealth.WebForms._Default" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="NorthernBrightHealth.WebForms._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="screen">
+        <h1>Welcome to the Future of Healthcare.</h1>
+        <h4>Here at Northern Bright Health, we offer service that cannot be beat (literally)! </h4>
+        <hr style="background-color: white;" />
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <p class="descriptive-text">Please enter the patients name below:</p>
+
+        <div class="container form-outline  row-no-gutters">
+            <%-- First Name --%>
+            <div class="form-group col-xs-12 col-sm-6 col-lg-4" style="display: inline">
+                <asp:Label for="inputFirstName"
+                    Text="First Name"
+                    runat="server" />
+                <asp:TextBox ID="inputFirstName"
+                    type="text"
+                    runat="server" />
+            </div>
+
+            <%-- Last Name --%>
+            <div class="form-group col-xs-12 col-sm-6 col-lg-4" style="display: inline">
+                <asp:Label for="inputLastName"
+                    Text="Last Name"
+                    runat="server" />
+                <asp:TextBox ID="inputLastName"
+                    runat="server" />
+            </div>
+
+            <%-- Date of Birth --%>
+            <div class="form-group col-xs-12 col-sm-6 col-lg-4" style="display: inline">
+                <asp:Label for="inputDateOfBirth"
+                    Text="Date of Birth"
+                    runat="server" />
+                <asp:TextBox ID="inputDateOfBirth"
+                    TextMode="Date"
+                    min="01-01-1850"
+                    value="2000-01-01"
+                    runat="server" />
+            </div>
+
+            <%-- Weight --%>
+            <div class="form-group col-xs-12 col-sm-6 col-lg-4" style="display: inline">
+                <asp:Label for="inputWeightInPounds"
+                    Text="Weight (lbs)"
+                    runat="server" />
+                <asp:TextBox ID="inputWeightInPounds"
+                    TextMode="Number"
+                    pattern="[0-9]+"
+                    runat="server" />
+            </div>
+
+            <%-- Height --%>
+            <div class="form-group col-xs-12 col-sm-6 col-lg-4" style="display: inline">
+                <asp:Label for="inputHeight"
+                    Text="Height (ft/in)"
+                    runat="server" />
+                <asp:DropDownList ID="inputHeight" runat="server" />
+            </div>
+        </div>
+
+        <asp:Literal ID="litResponse"
+            runat="server" />
+
+        <%-- Submit Button --%>
+        <div class="submission-button">
+            <asp:Button Text="Submit Patient"
+                OnClick="SubmitPatient"
+                runat="server" />
+        </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
 </asp:Content>

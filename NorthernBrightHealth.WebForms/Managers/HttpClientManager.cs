@@ -9,12 +9,13 @@ namespace NorthernBrightHealth.WebForms.Managers
 {
     public static class HttpClientManager
     {
-        public static HttpClient GetHttpClient()
+        private const string NBH_BaseAddress = "https://localhost:44356/";
+
+        // Return an HttpClient instance for the NortherBrightHealth API.
+        public static HttpClient GetHttpClient(string query = "")
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:56789/");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.BaseAddress = new Uri(NBH_BaseAddress + query);
             return client;
         }
     }

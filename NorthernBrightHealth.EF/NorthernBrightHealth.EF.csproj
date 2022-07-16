@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\NorthernBrightHealthDbContext.cs" />
-    <Compile Include="Migrations\202207150348244_CreatePatient.cs" />
-    <Compile Include="Migrations\202207150348244_CreatePatient.designer.cs">
-      <DependentUpon>202207150348244_CreatePatient.cs</DependentUpon>
+    <Compile Include="Migrations\202207160141109_CreatePerson.cs" />
+    <Compile Include="Migrations\202207160141109_CreatePerson.designer.cs">
+      <DependentUpon>202207160141109_CreatePerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,8 +75,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202207150348244_CreatePatient.resx">
-      <DependentUpon>202207150348244_CreatePatient.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202207160141109_CreatePerson.resx">
+      <DependentUpon>202207160141109_CreatePerson.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

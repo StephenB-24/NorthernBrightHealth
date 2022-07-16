@@ -15,6 +15,9 @@ namespace NorthernBrightHealth.WebAPI.Controllers
         // GET api/values
         public IEnumerable<Patient> Get()
         {
+            // TODO: Log Request
+
+
             // Return a list of all Patients
             try
             {
@@ -25,6 +28,8 @@ namespace NorthernBrightHealth.WebAPI.Controllers
             }
             catch (Exception e)
             {
+                // Log Errors
+
                 return null;
             }
         }
@@ -46,13 +51,15 @@ namespace NorthernBrightHealth.WebAPI.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody] Patient patient)
+        public IHttpActionResult Post([FromBody] Patient patient)
         {
             // Posts the patient into the db context
             using (var db = new NorthernBrightHealthDbContext())
             {
                 db.Patients.Add(patient);
                 db.SaveChanges();
+
+                return Ok();
             }
         }
 

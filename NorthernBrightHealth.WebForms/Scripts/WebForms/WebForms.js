@@ -1,4 +1,4 @@
-//CdnPath=http://ajax.aspnetcdn.com/ajax/4.5.1/1/WebForms.js
+//CdnPath=https://ajax.aspnetcdn.com/ajax/4.5.1/1/WebForms.js
 function WebForm_PostBackOptions(eventTarget, eventArgument, validation, validationGroup, actionUrl, trackFocus, clientSubmit) {
     this.eventTarget = eventTarget;
     this.eventArgument = eventArgument;
@@ -83,7 +83,7 @@ function WebForm_DoCallback(eventTarget, eventArgument, eventCallback, context, 
     if (setRequestHeaderMethodExists) {
         xmlRequest.onreadystatechange = WebForm_CallbackComplete;
         callback.xmlRequest = xmlRequest;
-        // e.g. http:
+        // e.g. https:
         var action = theForm.action || document.location.pathname, fragmentIndex = action.indexOf('#');
         if (fragmentIndex !== -1) {
             action = action.substr(0, fragmentIndex);

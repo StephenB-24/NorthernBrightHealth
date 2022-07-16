@@ -19,8 +19,8 @@ namespace NorthernBrightHealth.WebAPI
             // Ensure the database is updated to the latest migration
             //Database.SetInitializer<NorthernBrightHealthDbContext>(
             //    new CreateDatabaseIfNotExists<NorthernBrightHealthDbContext>());
-            Database.SetInitializer<NorthernBrightHealthDbContext>(
-                new MigrateDatabaseToLatestVersion<NorthernBrightHealthDbContext, Configuration>());
+            //Database.SetInitializer<NorthernBrightHealthDbContext>(
+            //    new MigrateDatabaseToLatestVersion<NorthernBrightHealthDbContext, Configuration>());
 
 
             // Continue with standard WebAPI setup
