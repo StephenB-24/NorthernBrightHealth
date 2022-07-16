@@ -43,12 +43,12 @@
         });
     </script>
 
-    <div class="screen">
+    <div class="outer-screen">
         <h1>Patients</h1>
         <h4>Below are the patients you have cured</h4>
         <hr />
-        <div>
-            <table class="tblPatients" border="1">
+        <div class="table-responsive">
+            <table class="tblPatients table" border="1">
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -66,6 +66,5 @@
                 </tbody>
             </table>
         </div>
-
     </div>
 </asp:Content>

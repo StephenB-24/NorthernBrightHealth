@@ -38,6 +38,9 @@ namespace NorthernBrightHealth.WebForms
                     inputHeight.Items.Add(newHeightOption);
                 }
             }
+
+            // Select 5' 8" because it's a very common height
+            inputHeight.SelectedValue = "68";
         }
         
         // Called by the submit button, submits the patient
@@ -54,6 +57,7 @@ namespace NorthernBrightHealth.WebForms
                     DateOfBirth = DateTime.Parse(inputDateOfBirth.Text),
                     WeightInPounds = float.Parse(inputWeightInPounds.Text),
                     HeightInInches = int.Parse(inputHeight.Text),
+                    Immortal = true,
 
                     DateAdded = DateTime.Now,
                     DateLastUpdated = DateTime.Now
@@ -65,7 +69,7 @@ namespace NorthernBrightHealth.WebForms
 
                 if (response.IsSuccessStatusCode)
                 {
-                    litResponse.Text = "<p> Hooray!" + inputFirstName.Text + " " + inputLastName.Text + " is now cured of all sickness, and made immortal!</p>";
+                    litResponse.Text = "<p> Hooray! " + inputFirstName.Text + " " + inputLastName.Text + " is now cured of all sickness, and made immortal!</p>";
                     inputFirstName.Text = "";
                     inputLastName.Text = "";
                     inputDateOfBirth.Text = "";

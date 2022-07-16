@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="NorthernBrightHealth.WebForms._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="screen">
+    <div class="outer-screen">
         <h1>Welcome to the Future of Healthcare.</h1>
         <h4>Here at Northern Bright Health, we offer service that cannot be beat (literally)! </h4>
         <hr style="background-color: white;" />
