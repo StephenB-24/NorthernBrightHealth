@@ -26,13 +26,7 @@
             let myWidth = window.innerWidth;
             let myHeight = window.innerHeight;
 
-            console.log(window.innerHeight);
-
-            // your size calculation code here
-
             var heightOfScreen = document.getElementById('comp-outer-screen').offsetHeight;
-            console.log('heightOfScreen ' + heightOfScreen);
-
             document.getElementById("comp-table").style.height = myHeight - (50 + 18 + heightOfScreen + 150) + 'px';
 
             var bodyHeight = document.getElementById("body-content").offsetHeight;
@@ -91,7 +85,7 @@
                 <div class="computer-stand"></div>
                 <div class="computer-base"></div>
                 <div style="position: relative; z-index: -1;">
-                    <div id="comp-table" class="computer-table" style="position: absolute; position: absolute; left: 50%; transform: translate(-50%, 0%); padding: 10px;">
+                    <div id="comp-table" class="computer-table">
                         <footer>
                             <p>&copy; <%: DateTime.Now.Year %> - Northern Bright Health</p>
                         </footer>

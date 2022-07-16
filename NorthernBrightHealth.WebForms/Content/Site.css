@@ -54,6 +54,11 @@ span {
     background-color: rgb(139,69,19);
     width: 80%;
     min-height: 50px;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 10px;
     /*height: calc(100px - 100vw);*/
 }
 
