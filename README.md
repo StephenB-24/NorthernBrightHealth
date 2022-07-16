@@ -38,7 +38,11 @@ In order to do this, right click on the <b>solution</b> and setup multiple start
 Note: Business logic could be abstracted from the WebAPI to further decompose the solution.
 <h3>Backlog</h3>
 <hr />
+
 Logging
+
 Validation of form
+
 Improvements to CSS
+
 Add descriptions to the API calls within the WebAPI project
