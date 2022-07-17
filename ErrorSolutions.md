@@ -15,8 +15,9 @@ Set both NorthernBrightHealth.WebAPI and NorthernBrightHealth.WebForms projects 
 <h4><b>Issue 1: "bin\roslyn\csc.exe" issues when the project is ran</b></h4>
 Go to Tools > NuGet Package Manager > Package Manager Console
 Paste the following:
+```
 Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
-
+```
 <hr />
 
 <h4><b>Issue 2:  Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.</b></h4>
