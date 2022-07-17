@@ -14,7 +14,9 @@ Set both NorthernBrightHealth.WebAPI and NorthernBrightHealth.WebForms projects 
 
 <h4><b>Issue 1: "bin\roslyn\csc.exe" issues when the project is ran</b></h4>
 Go to Tools > NuGet Package Manager > Package Manager Console
-Paste the following:
+
+Set the default project to "All", then paste the following:
+
 ```
 Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
 ```
