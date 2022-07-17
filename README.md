@@ -13,7 +13,8 @@ A separation-of-concerns approach is used, so more projects are present.
 
 <h3>Instructions to Run</h3>
 <hr />
-Load the project up in Visual Studio. As a note, I used Visual Studio 2022 for this project.
+
+<p>Load the project up in Visual Studio. As a note, I used Visual Studio 2022 for this project.</p>
 
 <b>1) The most important aspect of running this project is to make sure that both the WebAPI and WebForms apps are set as startups together.</b>
 
