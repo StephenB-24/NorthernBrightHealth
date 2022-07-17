@@ -2,24 +2,53 @@
 <h3>Description</h3>
 <hr />
 
-<em>The year is 3000. Many advances have been made in healthcare over the past millenium. At this time, all one has to do is take a trip to the Triangulum Galaxy within our local group of the Virgo Supercluster. Here, NorthernBrightHealth can make any patient immortal with a mere snap of the fingers.</em>
+<em>The year is 3000. Many advances have been made in healthcare over the past millennium. At this time, all one has to do is take a trip to the Triangulum Galaxy within our local group of the Virgo Supercluster. Here, NorthernBrightHealth can make any patient immortal with a mere snap of the fingers.</em>
 
 ![image](https://user-images.githubusercontent.com/76532502/179167550-ec62fa9c-8fff-4478-982e-92d86ffb6339.png)
 
-<em>As an employee of NorthernBrightHealth, you have full access to this cutting edge technology. Add patients as you wish, saving them of all sicknesses... forever. That is, until production servers are accidently wiped by an intern 😅.</em>
+<em>As an employee of NorthernBrightHealth, you have full access to this cutting-edge technology. Add patients as you wish, saving them of all sicknesses... forever. That is, until production servers are accidentally wiped by an intern 😅.</em>
 
 Note: This solution was made with the ASP.NET Web Forms project as the main intention of the project.
-A seperation-of-concerns approach is used, so more projects are present.
+A separation-of-concerns approach is used, so more projects are present.
 
 <h3>Instructions to Run</h3>
 <hr />
 Load the project up in Visual Studio. As a note, I used Visual Studio 2022 for this project.
 
-<b>The most important aspect of running this project to to make sure that both the WebAPI and WebForms apps are set as startup together.</b>
+<b>1) The most important aspect of running this project is to make sure that both the WebAPI and WebForms apps are set as startups together.</b>
 
-In order to do this, right click on the <b>solution</b> and then click properties, and select the radio button for multiple startup projects. Select both the WebAPI and the WebForms project as startups.
+To do so, right-click on the <b>solution</b> and then click properties, and select the radio button for multiple startup projects. Select both the WebAPI and the WebForms project as startups.
 
+<b>Next, you will likely need to reinstall DotNetCompilerPlatform</b>
 
+To do so, go to "Tools > NuGet Package Manager > Package Manager Console" and then enter the following:
+```
+Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
+```
+
+Upon pasting the prior, it will immediately start reinstalling.
+It should look like the following after completing:
+
+![image](https://user-images.githubusercontent.com/76532502/179422153-5a23ff4b-7527-485c-85a1-8c7b1903b2a0.png)
+
+<b>You are now ready to run the project! Note that the first patient inserted will take longer because the database will be created and migrated by the WebAPI when it receives the first request.</b>
+
+If you have further issues, check the error solutions readme. I attempted to run this project on various other machines to create a generalized way of running the project that works.
+
+<h3>Screenshots</h3>
+<hr />
+
+<h5>Main Menu - Add Patients</h5>
+
+![image](https://user-images.githubusercontent.com/76532502/179421863-248c115d-37c4-41ff-933b-95c3da01018c.png)
+
+<h5>Main Menu - Patient Added</h5>
+
+![image](https://user-images.githubusercontent.com/76532502/179421895-eeb9d6a3-9c06-46df-9d08-4a9a360fca6d.png)
+
+<h5>View Patients - AJAX Table Results</h5>
+
+![image](https://user-images.githubusercontent.com/76532502/179421925-95bb08de-afa2-4d0b-9e90-e76e0f0c97c6.png)
 
 <h3>Solution Breakdown</h3>
 <hr />
